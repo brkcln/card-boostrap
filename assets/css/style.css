@@ -1,1 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+	--bg-color: hsl(185, 75%, 39%);
+	--color: hsl(229, 23%, 23%);
+	--fnt-size: 1rem;
+	--fnt-family: "Kumbh Sans", sans-serif;
+	--fnt-w400: 400;
+	--fnt-w700: 700;
+	--color-gray: hsl(227, 10%, 46%);
+	--white: white;
+}
+/* --------------  css reset ------------------ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	background: var(--bg-color);
+	color: var(--color);
+	-webkit-font-smoothing: antialiased;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+body,
+input,
+button {
+	font-size: var(--fnt-size);
+	font-family: var(--fnt-family);
+}
+button {
+	cursor: pointer;
+}
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/* --------------  container  ------------------ */
+.container-fluid {
+	height: 100vh;
+}
 
+/* --------------  card  ------------------ */
+.card {
+	max-width: 24rem;
+	position: relative;
+	border: none;
+	overflow: hidden;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+.card-body {
+	padding: 0;
+}
+.card-body card-age,
+.card-body p {
+	color: var(--color-gray);
+}
+
+/* --------------  card image  ------------------ */
+.card-profile-image {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	-webkit-transform: translate(-50%, -30%);
+	-moz-transform: translate(-50%, -30%);
+	-ms-transform: translate(-50%, -30%);
+	-o-transform: translate(-50%, -30%);
+	border: 2px solid var(--white);
+}
+/* --------------  card footer  ------------------ */
+.card-footer {
+	border-top: 1px solid hsla(0, 0%, 59%, 0.367);
+	background-color: var(--white);
+	display: flex;
+	text-align: center;
+	padding: 0;
+}
+.card-footer ul {
+	width: 100%;
+}
+li:nth-of-type(2) {
+	color: var(--color-gray);
+}
